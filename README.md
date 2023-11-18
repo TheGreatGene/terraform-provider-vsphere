@@ -1,4 +1,4 @@
-# Background
+#Background
 
 I started working with terraform about a year ago. At that time my primary focus was defining the processes required to import brownfield vSphere environments/resources into terraform. I've since started working on the process to build out a greenfield vSphere environment. As with most tech projects it wasn't smooth sailing. The goal of this repo is to share the knowledge I've gained and hopefully save you from all the headaches I encountered.
 
