@@ -1,6 +1,6 @@
 # terraform-provider-vsphere
 
-Currently blocked by https://github.com/hashicorp/terraform-provider-vsphere/issues/1907
+Currently blocked by https://github.com/hashicorp/terraform-provider-vsphere/issues/1907 if you've found anything here helpful please consider upvoting the blocking issue.
 
 Using the code in this repo terraform will:
 1 – Create vsphere_host resources
