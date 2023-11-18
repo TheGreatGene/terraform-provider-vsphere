@@ -10,6 +10,7 @@ If you're interested in using terraform to manage your vSphere environment or yo
 
 ### Brownfield
 11-18-23 - Work in progress (Pending code generalization)
+https://github.com/TheGreatGene/terraform-provider-vsphere/tree/main/importing-resources
 
 ## Overview
 **Using the code in this repo terraform will:**
