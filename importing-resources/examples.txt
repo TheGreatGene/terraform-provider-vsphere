@@ -1,1 +1,35 @@
+#Datacenter
+resource "vsphere_datacenter" "infralab" {
+  provider = vsphere
+  name     = "Lab"
+}
 
+terraform import vsphere_datacenter.infralab /Lab
+
+#Hosts
+variable "lab_cluster101_hosts" {
+  type        = list(string)
+  description = "Cluster members"
+  default     = ["lab101a", "lab101b", "lab101c"]
+}
+
+resource "vsphere_host" "lab101" {
+  provider = vsphere
+  for_each = toset(var.lab_cluster101_hosts)
+  hostname = "${each.value}.lab.athenahealth.com"
+  username        = var.esxi_username_terraform
+  password        = var.esxi_password_terraform
+  cluster_managed = true
+
+  lifecycle {
+    ignore_changes = [
+      #Ignore changes to host managed state, terraform will not be used to manage ESXi management state
+      maintenance
+    ]
+  }
+}
+
+
+terraform import vsphere_host.lab101[\`"lab101a\`"] host-0001
+terraform import vsphere_host.lab101[\`"lab101b\`"] host-0002
+terraform import vsphere_host.lab101[\`"lab101c\`"] host-0003
