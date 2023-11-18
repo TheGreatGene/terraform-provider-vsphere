@@ -9,7 +9,7 @@ My progress on the greenfield vSphere buildout is currently blocked by https://g
 If you're interested in using terraform to manage your vSphere environment or you've found anything in this repo useful please consider upvoting the 1907 feature request.
 
 ### Brownfield
-11-18-23 - Work in progress
+11-18-23 - Work in progress (Pending code generalization)
 
 ## Overview
 **Using the code in this repo terraform will:**
