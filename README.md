@@ -13,8 +13,8 @@ If you're interested in using terraform to manage your vSphere environment or yo
 
 ## Overview
 **Using the code in this repo terraform will:**
-Create vsphere_host resources
-– Join the host to a vsphere_compute_cluster
+1. Create vsphere_host resources
+2. Join the host to a vsphere_compute_cluster
 – Join the host to a vsphere_distributed_virtual_switch
 – Create vmk1
 – Create vmk2
